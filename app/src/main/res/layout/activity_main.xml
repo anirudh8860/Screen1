@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="#ed0c8f" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/alicia_keys"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Alicia Keys"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:id="@+id/txtView1"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="San Francisco,CA"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:id="@+id/txtView2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <at.markushi.ui.CircleButton
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/chat"
+                    app:cb_color="#786D5F"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_weight="1"
+                    />
+                <at.markushi.ui.CircleButton
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/gallery"
+                    app:cb_color="#786D5F"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_weight="1"
+                    />
+                <at.markushi.ui.CircleButton
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/location"
+                    app:cb_color="#786D5F"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_weight="1"
+                    />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:text="Chat"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/txtView3" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:text="Gallery"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/txtView4" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:textColor="#000000"
+                    android:text="Location"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/txtView5" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="30dp">
+                <at.markushi.ui.CircleButton
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/contacts"
+                    app:cb_color="#786D5F"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_weight="1"
+                    />
+                <at.markushi.ui.CircleButton
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/music"
+                    app:cb_color="#786D5F"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_weight="1"
+                    />
+                <at.markushi.ui.CircleButton
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:src="@drawable/notifs"
+                    app:cb_color="#786D5F"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:text="Friends"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/txtView6" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:text="Music"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/txtView7" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:textColor="#000000"
+                    android:text="Notifications"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/txtView8" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
